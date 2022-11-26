@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework</title>
+  
+  <!-- LINK -->
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="content">
+        <h2>01</h2>
+        <h3>Card One</h3>
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores eum consequuntur ut quos quis non nulla mollitia eveniet, optio deserunt.</p>
+        <div class="btns">
+          <button onclick="changeColor('lime');">Lime</button>
+          <button onclick="changeColor('orange');">Orange</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h2>02</h2>
+        <h3>Card Two</h3>
+        <p id="paraTwo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores eum consequuntur ut quos quis non nulla mollitia eveniet, optio deserunt.</p>
+          <div class="btns">
+            <button onclick="CHangeColor('Teal');">Teal</button>
+            <button onclick="CHangeColor('coral');">Coral</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h2>03</h2>
+        <h3>Card Three</h3>
+        <p id="paraThree">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores eum consequuntur ut quos quis non nulla mollitia eveniet, optio deserunt.</p>
+        <div class="btns">
+          <button onclick="ChangeColor('red');">Red</button>
+          <button onclick="ChangeColor('peru');">Peru</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function changeColor(newColor) {
+      const elem = document.getElementById('para');
+      elem.style.color = newColor;
+    }
+    function CHangeColor(NewColor) {
+      const cardTwo = document.getElementById('paraTwo');
+      cardTwo.style.color = NewColor;
+    }
+    function ChangeColor(NeWColor) {
+      const cardThree = document.getElementById('paraThree');
+      cardThree.style.color = NeWColor;
+    }
+  </script>
+</body>
+</html>
